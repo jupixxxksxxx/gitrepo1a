@@ -22,22 +22,18 @@
 #  
 #  
 
-def liczbosz():
-    n=int(input("Podaj liczbe, którą chcesz sprawdzić:"))
-    i = 2
-    while i*i<=n:
-        if not i==0:
-            i=+1
-        if i==0:
-            print("Liczba złożona")
-    if not i*i<=n:
-        print("liczba pierwsza")
-    if not n%1
-            
-
-
 def main(args):
-    liczbosz()
+    n = int(input("Podaj liczbe do sprawdzenia:"))
+    i = 2
+    while i * i <=n:
+        if n % i == 0 :
+            print("Liczba zlozona")
+            return 0
+        i = i + 1
+                
+    print("Liczba pierwsza")
+    
+    
     return 0
 
 if __name__ == '__main__':

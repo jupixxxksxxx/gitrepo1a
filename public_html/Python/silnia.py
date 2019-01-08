@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-#  Euklides.py
+#  silnia.py
 #  
 #  Copyright 2019  <>
 #  
@@ -22,120 +22,35 @@
 #  
 #  
 
+# n! = 1 dla n = 0
+# n! = n * (n-1)! dla n >= 1
+# n! = 1 * ... * n
+# 4! = 1 * 2 * 3 * 4
 
-def nwdv1(a, b):
-    while a != b:
-        if a > b:
-            a = a - b
-        else:
-            b = b - a
-    return a
 
-def nwdv2(a, b):
-    """Wersja optymalna"""
-    while a > 0:
-        a = a % b
-        b = b - a
-    return b
 
-def testuj():
-    assert(nwdv1(20, 4) == 4)
-    assert(nwdv2(20, 4) == 4)
-    assert(nwdv2(11, 4) == 1)
-    
-    
-    
-    
+
+
 
 
 def main(args):
-
-    a = int(input('Podaj liczbe a: '))
-    b = int(input('Podaj liczbe b: '))
+    n=int(input("Podaj liczbę naturalną:"))
+    wynik = 1
+    for i in range(1, n + 1):
+        wynik = wynik * i
+    print (wynik)
     
-    print(nwdv2(a, b))
-    testuj()
-
-
-
-
-
-
-
-   
+    
+    
+    
+    
+    
+    
+    
+    
+    
     return 0
 
 if __name__ == '__main__':
     import sys
     sys.exit(main(sys.argv))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
