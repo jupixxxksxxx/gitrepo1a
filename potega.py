@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-#  silnia.py
+#  potega.py
 #  
 #  Copyright 2019  <>
 #  
@@ -21,34 +21,55 @@
 #  MA 02110-1301, USA.
 #  
 #  
+#
+#
+#
 
-# n! = 1 dla n = 0
-# n! = n * (n-1)! dla n >= 1
-# n! = 1 * ... * n
-# 4! = 1 * 2 * 3 * 4
-
-
-
-
-
-
-def silnia_it(n):
+def czy_naturalna(a):
+    if a.isdigit():
+        return True
+    return False
+    
+def potega_it(a, n):
     wynik = 1
-    for i in range(1, n + 1):
-        wynik = wynik * i
+    for i in range( n ):
+        wynik = a * wynik
     return wynik
+    
 
-   
+
+
+def main(args):
+    
+    assert potega_it(2, 0) == 1
+    assert potega_it(2, 1) == 2
+    assert potega_it(0, 10) == 0
+    assert potega_it(1, 10) == 1
+    assert potega_it(3, 3) == 27
     
     
     
-def main(args):   
     
-    n = int(input("Podaj liczbę naturalną: "))
-    print("{}! = {}".format(n, silnia_it(n)))
+    a = input("Podaj podstawę:")
+    n = input("Podaj wykładnik:")
+    if not czy_naturalna(a) or not czy_naturalna(n):
+        print("Błędne dane!")
+        return 0
+    print("{} do potęgi {} = {}".format(a, n, potega_it(int(a), int(n))))
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     return 0
-        
-    
 
 if __name__ == '__main__':
     import sys
