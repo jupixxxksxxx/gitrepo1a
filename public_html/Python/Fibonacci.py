@@ -29,19 +29,38 @@ def czy_naturalna(n):
     return False
 
 
-
-
+def fib_it(n):
+    if n < 2:
+        return n
+    a, b, wynik = 0, 1, 0
+    
+    
+    for i in range(2, n + 1):
+        wynik = a + b
+        a, b = b, wynik 
+    return wynik
+    
+    
 
 
 
 
 def main(args):
+    assert fib_it(0) == 0
+    assert fib_it(1) == 1
+    assert fib_it(7) == 13
+    assert fib_it(16) == 987
+    assert fib_it(19) == 4181
+    
+    
+    
     n = input('Który wyraz ciągu chcesz zobaczyć?')
     while not czy_naturalna(n):
         print('Błądne dane!')
         n = input('Który wyraz ciągu chcesz zobaczyć?')
 
-
+    print("F_it({}) = {}".format(n, fib_it(int(n))))
+    
 
 
 
