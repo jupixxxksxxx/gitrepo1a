@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-#  potega.py
+#  rekurencja01.py
 #  
 #  Copyright 2019  <>
 #  
@@ -21,57 +21,38 @@
 #  MA 02110-1301, USA.
 #  
 #  
-#
-#
-#
 
-def czy_naturalna(a):
-    if a.isdigit():
-        return True
-    return False
-    
-def potega_it(a, n):
-    wynik = 1
-    for i in range( n ):
-        wynik = a * wynik
-    return wynik
-    
-# a^n = a^(n - 1) * a
+import turtle
 
-def potega_rek(a, n):
-    if n == 0
-        return 1
-    if n == 1
-        return a 
+
+def rysuj_it(ile, bok, kat):
+    for i in range(ile):
+        turtle.forward(bok)
+        turtle.right(kat)
+
+
+
+def rysuj_rek(ile, bok, kat):
+    if ile < 1:
+        return
+    turtle.forward(bok)
+    turtle.right(kat)
+    rysuj_rek(ile - 1, bok, kat)
     
     
+    
+    
+    
+    
+    
+
 
 
 def main(args):
+    turtle.setup(800, 600)
+    rysuj_rek(5, 100, 72)
     
-    assert potega_rek(2, 0) == 1
-    assert potega_rek(2, 1) == 2
-    assert potega_rek(0, 10) == 0
-    assert potega_rek(1, 10) == 1
-    assert potega_rek(3, 3) == 27
-    
-    
-    
-    
-    a = input("Podaj podstawę:")
-    n = input("Podaj wykładnik:")
-    if not czy_naturalna(a) or not czy_naturalna(n):
-        print("Błędne dane!")
-        return 0
-    print("{} do potęgi {} = {}".format(a, n, potega_it(int(a), int(n))))
-    
-    
-    
-    
-    
-    
-    
-    
+    turtle.done()
     
     
     
@@ -82,3 +63,18 @@ def main(args):
 if __name__ == '__main__':
     import sys
     sys.exit(main(sys.argv))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
