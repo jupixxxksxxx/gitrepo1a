@@ -21,41 +21,68 @@
 #  MA 02110-1301, USA.
 #  
 #  
-import os
-
-
+import os 
 
 def czy_palindrom(tekst):
-    ile=len(tekst)
-    for i in range(ile//2):
-        if not tekst[i] != tekst [-i-1]:
+    ile = len(tekst)
+    for i in range(ile // 2):
+        if tekst[i] != tekst[-i-1]:
             return False
-        return True
+
+    return True
     
 def czytaj_dane(plik):
     if not os.path.exists(plik):
-        print('Plik niedostepny!')
-        return False   
+        print('Plik niedostępny')
+        return False
     teksty = []
     with open(plik, "r") as f:
         for wiersz in f:
             teksty.append(wiersz.strip())
-    return teksty
-    
-    
-    
+        return teksty
 
 def main(args):
-    #tekst = input('Podaj wyraz:')
+    # tekst = input("podaj tekst ")
     teksty = czytaj_dane('dane01.txt')
-    print(teksty)
     ile = 0
+    for i in range (len(teksty)):
+        if czy_palindrom(teksty[i]):
+            ile += 1
+
+        else:
+            continue
     # ~if czy_palindrom(tekst):
-        # ~print('To Palindrom!')
-    # ~
-    
-    
+        # ~print('to palindrom')
+    # ~else:
+        # ~print(' to nie palindrom')
+    print ("Palindromow jest:")
+    print(ile)
     return 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 if __name__ == '__main__':
     import sys
