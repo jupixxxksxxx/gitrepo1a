@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-#  szyfr_cezara.py
+#  palindorm.py
 #  
 #  Copyright 2019  <>
 #  
@@ -21,37 +21,38 @@
 #  MA 02110-1301, USA.
 #  
 #  
-
-def pobierz_klucz():
-    try:
-        klucz = int(input('Podaj klucz:\n'))
-        return klucz % 26
-    except ValueError:
-        print('Błędny klucz!')
-        return 3
+import os
 
 
-def szyfruj_1(tekst, klucz):
-    szyfrogram = ' '
-    for znak in tekst:
-        ascii = ord(znak)
-        if ascii + klucz > 122:
-            znak = chr(ascii + klucz - 26)    
-        else:
-            znak = chr(ascii + klucz)
-            
-            
-            
-        szyfrogram += chr(ascii + klucz)
-    print('Szyfrogram:\n', szyfrogram)
 
-
+def czy_palindrom(tekst):
+    ile=len(tekst)
+    for i in range(ile//2):
+        if not tekst[i] != tekst [-i-1]:
+            return False
+        return True
+    
+def czytaj_dane(plik):
+    if not os.path.exists(plik):
+        print('Plik niedostepny!')
+        return False   
+    teksty = []
+    with open(plik, "r") as f:
+        for wiersz in f:
+            teksty.append(wiersz.strip())
+    return teksty
+    
+    
+    
 
 def main(args):
-    tekst = input('podaj tekst:\n').lower()
-    klucz = pobierz_klucz()
-    
-    szyfruj_1(tekst, klucz)
+    #tekst = input('Podaj wyraz:')
+    teksty = czytaj_dane('dane01.txt')
+    print(teksty)
+    ile = 0
+    # ~if czy_palindrom(tekst):
+        # ~print('To Palindrom!')
+    # ~
     
     
     return 0
