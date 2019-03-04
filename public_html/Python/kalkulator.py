@@ -37,7 +37,7 @@ def pokaz_liste():
           koniec – wyjście z programu
           ''')
           
-def pobierz_liczbe(komunikat'Pobierz liczbe:')
+def pobierz_liczbe(komunikat 'Pobierz liczbe:')
     a = input(komunikat)
     if a.isadigit():
         return int.a
