@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-#  potega.py
+#  Fibonacci.py
 #  
 #  Copyright 2019  <>
 #  
@@ -22,63 +22,119 @@
 #  
 #  
 #
-#
-#
 
-def czy_naturalna(a):
-    if a.isdigit():
+
+def czy_naturalna(n):
+    if n.isdigit():
         return True
     return False
+
+
+def fib_it(n):
+    if n < 2:
+        return n
+    a, b, wynik = 0, 1, 0
     
-def potega_it(a, n):
-    wynik = 1
-    for i in range( n ):
-        wynik = a * wynik
+    
+    for i in range(2, n + 1):
+        wynik = a + b
+        a, b = b, wynik 
     return wynik
     
-# a^n = a^(n - 1) * a
+    
 
-def potega_rek(a, n):
-    if n == 0
-        return 1
-    if n == 1
-        return a 
-    
-    
+
 
 
 def main(args):
-    
-    assert potega_rek(2, 0) == 1
-    assert potega_rek(2, 1) == 2
-    assert potega_rek(0, 10) == 0
-    assert potega_rek(1, 10) == 1
-    assert potega_rek(3, 3) == 27
-    
+    assert fib_it(0) == 0
+    assert fib_it(1) == 1
+    assert fib_it(7) == 13
+    assert fib_it(16) == 987
+    assert fib_it(19) == 4181
     
     
     
-    a = input("Podaj podstawę:")
-    n = input("Podaj wykładnik:")
-    if not czy_naturalna(a) or not czy_naturalna(n):
-        print("Błędne dane!")
-        return 0
-    print("{} do potęgi {} = {}".format(a, n, potega_it(int(a), int(n))))
+    n = input('Który wyraz ciągu chcesz zobaczyć?')
+    while not czy_naturalna(n):
+        print('Błądne dane!')
+        n = input('Który wyraz ciągu chcesz zobaczyć?')
+
+    print("F_it({}) = {}".format(n, fib_it(int(n))))
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
     return 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 if __name__ == '__main__':
     import sys
     sys.exit(main(sys.argv))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

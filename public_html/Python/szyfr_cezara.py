@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-#  potega.py
+#  szyfr_cezara.py
 #  
 #  Copyright 2019  <>
 #  
@@ -21,60 +21,37 @@
 #  MA 02110-1301, USA.
 #  
 #  
-#
-#
-#
 
-def czy_naturalna(a):
-    if a.isdigit():
-        return True
-    return False
-    
-def potega_it(a, n):
-    wynik = 1
-    for i in range( n ):
-        wynik = a * wynik
-    return wynik
-    
-# a^n = a^(n - 1) * a
+def pobierz_klucz():
+    try:
+        klucz = int(input('Podaj klucz:\n'))
+        return klucz % 26
+    except ValueError:
+        print('Błędny klucz!')
+        return 3
 
-def potega_rek(a, n):
-    if n == 0
-        return 1
-    if n == 1
-        return a 
-    
-    
+
+def szyfruj_1(tekst, klucz):
+    szyfrogram = ' '
+    for znak in tekst:
+        ascii = ord(znak)
+        if ascii + klucz > 122:
+            znak = chr(ascii + klucz - 26)    
+        else:
+            znak = chr(ascii + klucz)
+            
+            
+            
+        szyfrogram += chr(ascii + klucz)
+    print('Szyfrogram:\n', szyfrogram)
+
 
 
 def main(args):
+    tekst = input('podaj tekst:\n').lower()
+    klucz = pobierz_klucz()
     
-    assert potega_rek(2, 0) == 1
-    assert potega_rek(2, 1) == 2
-    assert potega_rek(0, 10) == 0
-    assert potega_rek(1, 10) == 1
-    assert potega_rek(3, 3) == 27
-    
-    
-    
-    
-    a = input("Podaj podstawę:")
-    n = input("Podaj wykładnik:")
-    if not czy_naturalna(a) or not czy_naturalna(n):
-        print("Błędne dane!")
-        return 0
-    print("{} do potęgi {} = {}".format(a, n, potega_it(int(a), int(n))))
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    szyfruj_1(tekst, klucz)
     
     
     return 0
