@@ -17,3 +17,6 @@ warning: unused variable
 pliki obiektowe rozszerzenie ".o"
 linkowanie - F9, Zbuduj / Build
 Uruchomienie F5,Zbuduj / wykonaj
+
+Preferencje / Narzędzia / Terminal:
+terminator -e "/bin/sh %c"
