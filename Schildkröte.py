@@ -26,6 +26,7 @@ import turtle
 
 
 def main(args):
+    turtle.speed(500)
     
     turtle.width(15)
     turtle.setup(800, 600)
