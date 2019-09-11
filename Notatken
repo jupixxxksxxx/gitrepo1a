@@ -20,3 +20,8 @@ Uruchomienie F5,Zbuduj / wykonaj
 
 Preferencje / Narzędzia / Terminal:
 terminator -e "/bin/sh %c"
+
+    11/9 środa 2019
+Dostosowanie wyglądu strony
+Sublime text: bootstrap 4 snippets html boilerplate. html js css prettify
+CDN - content delivery
