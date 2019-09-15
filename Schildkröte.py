@@ -27,8 +27,9 @@ import turtle
 
 
 def main(args):
+    turtle.speed(500)
     
-    
+    turtle.width(15)
     turtle.setup(800, 600)
     turtle.right(45)
     turtle.forward(100)
@@ -75,8 +76,14 @@ def main(args):
     turtle.forward(50)
     turtle.left(90)
     
+    turtle.right(135)
+    turtle.up()
+    turtle.forward(35)
+    turtle.right(90)
+    turtle.forward(200)
     turtle.left(90)
-    
+    turtle.down()
+    turtle.circle(200)
     
     
     

@@ -1,0 +1,27 @@
+Adres servera 192.168.3.3
+Ctrl + D - tworzenie zakładki
+materialy/web/cwiczenia
+
+
+
+
+
+
+C++ wymaga deklaracji typu zmiennej
+int - liczby calkowite
+float - liczby ułamkowe   
+każda instrukcja kończu się średnikiem
+kompilacja - F8, Zbuduj / Complete      
+error: no match for operator
+warning: unused variable
+pliki obiektowe rozszerzenie ".o"
+linkowanie - F9, Zbuduj / Build
+Uruchomienie F5,Zbuduj / wykonaj
+
+Preferencje / Narzędzia / Terminal:
+terminator -e "/bin/sh %c"
+
+    11/9 środa 2019
+Dostosowanie wyglądu strony
+Sublime text: bootstrap 4 snippets html boilerplate. html js css prettify
+CDN - content delivery
