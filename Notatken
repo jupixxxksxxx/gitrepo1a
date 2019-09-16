@@ -25,3 +25,14 @@ terminator -e "/bin/sh %c"
 Dostosowanie wyglądu strony
 Sublime text: bootstrap 4 snippets html boilerplate. html js css prettify
 CDN - content delivery
+    13/9 poniedziałek 2019
+i++ - inkrementacja zmiennej, tj. powiększenie o 1
+i-- - dekrementacja zmiennej, tj. pomniejszenie o 1
+
+1.Edycja/Preferecnje/Narz©dzia/Terminal:terminator-e"/bin/sh %c"
+2.Build: g++-Wall-o "%e.exe" "%f"
+3.Execute: "./%e.exe"
+F8 F9 F5
+
+
+error: "x" was not declared
