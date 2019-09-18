@@ -2,18 +2,13 @@ body{
 	background-color:#FFFFFF;
 	color:##000000;
 	font:11px verdana,sans-serif;
-	overflow:auto;
-	margin:0}
+	margin:0;
+	padding-top: 4.5rem;}
 .tabtytul{ /* tabelka z grafik� (nag��wek) */
 	background-color:#80c2ab;
 	border-bottom:2px solid #e34243}
 .tytul{ /* kom�rka z tytu�em */
-	background-color:#D3212D;
-	color:#ffffff;
-	height:80px;
-	font:bold 36px verdana,sans-serif;
-	border-bottom:2px solid #c0c0c0;
-	text-align:center}
+	color:#d62430;}
 .tytulnapis{ /* tytu� strony z cieniem (tylko IE) */
 	padding-left:10px;width:400px;height:60px;filter:Shadow(Color=#666666,Direction=150)}
 .tabela{ /* tabela z planem */
@@ -25,15 +20,15 @@ th{
 	color:#fffafa;
 	font-size:13px}
 td.g{ /* godzina */
-	background-color:#ebebeb;
+	background-color:#d9d9d9;
 	color:#000000;
 	font-weight:bold;
 	vertical-align:top;
 	text-align:center;
 	white-space:nowrap}
 td.nr{ /* numer lekcji */
-	background-color:#ffffff;
-	color:#000000;
+	background-color:#d62430;
+	color:#ffffff;
 	font-weight:bold;
 	text-align:center;
 	vertical-align:top}
@@ -48,7 +43,7 @@ a.s{ /* sala */
 a.k{ /* klasa */
 	color:#000099}
 .p{ /* przedmiot */
-	color:#F4C430;
+	color:#000000;
 	font-weight:bold}
 .op{ /* napis */
 	font:10px verdana,sans-serif}
