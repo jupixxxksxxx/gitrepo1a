@@ -27,63 +27,41 @@ import turtle
 
 
 def main(args):
+    xd=220
     turtle.speed(500)
     
     turtle.width(15)
     turtle.setup(800, 600)
     turtle.right(45)
-    turtle.forward(100)
-    turtle.right(90)
-    turtle.forward(150)
-    turtle.right(90)
-    turtle.forward(50)
-    turtle.right(90)
-    turtle.forward(100)
-    turtle.left(90)
-    turtle.forward(50)
-    turtle.left(90)
     
-    turtle.forward(100)
-    turtle.right(90)
-    turtle.forward(150)
-    turtle.right(90)
-    turtle.forward(50)
-    turtle.right(90)
-    turtle.forward(100)
-    turtle.left(90)
-    turtle.forward(50)
-    turtle.left(90)
-    
-    turtle.forward(100)
-    turtle.right(90)
-    turtle.forward(150)
-    turtle.right(90)
-    turtle.forward(50)
-    turtle.right(90)
-    turtle.forward(100)
-    turtle.left(90)
-    turtle.forward(50)
-    turtle.left(90)
-    
-    turtle.forward(100)
-    turtle.right(90)
-    turtle.forward(150)
-    turtle.right(90)
-    turtle.forward(50)
-    turtle.right(90)
-    turtle.forward(100)
-    turtle.left(90)
-    turtle.forward(50)
-    turtle.left(90)
+    for y in range(4):
+        turtle.forward(100)
+        turtle.right(90)
+        turtle.forward(150)
+        turtle.right(90)
+        turtle.forward(50)
+        turtle.right(90)
+        turtle.forward(100)
+        turtle.left(90)
+        turtle.forward(50)
+        turtle.left(90)
     
     turtle.right(135)
     turtle.up()
     turtle.forward(35)
     turtle.right(90)
-    turtle.forward(200)
+    turtle.forward(220)
     turtle.left(90)
     turtle.down()
-    turtle.circle(200)
+    turtle.color("red")
+    turtle.width(50)
+    for i in range(20):
+        turtle.circle(xd)
+        turtle.right(90)
+        turtle.forward(50)
+        turtle.left(90)
+        xd = xd+40
+    
     
     
     
