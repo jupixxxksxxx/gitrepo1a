@@ -46,6 +46,21 @@ php -S localhost:8000
 
 
 
+    7/10 poniedziałek 2019
+    
+void nazwafunkcji(parametry) {
+    zmienne lokalne
+    przesłanie zmienncyh globalnych
+    ciało funkcji;
+}
+
+zwracany_typ nazwaFunkcji(ew.parametry) {
+    ciało funkcji;
+}
+
+przekazywanie argumentów przez wartość(by value)
+przekazywanie argumentów przez referemcje(by reference)
+
 
 
 
