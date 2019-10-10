@@ -33,7 +33,7 @@ using namespace std;
  
 void drukuj()	{
 	
-    cout<< "Pracujesz"<< staz << "lat i zarabiasz" << zarobek << endl;
+    cout<< "Pracujesz "<< staz << " lat i zarabiasz " << zarobek << endl;
     
 }
 
@@ -41,7 +41,7 @@ int awans()	{
 	
     staz += 1;
     zarobek = zarobek * 1.1 ;
-    return staz, zarobek;
+    return zarobek;
     
 }
  
