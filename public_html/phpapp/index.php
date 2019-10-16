@@ -1,5 +1,6 @@
 <?php
 
+
 define('DINC', 'inc/');
 define('DBASE', 'baza');
 $dbfile = 'db.sqlite3';
