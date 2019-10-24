@@ -1,5 +1,5 @@
 /*
- * kodowanie.cpp
+ * kodoj.cpp
  * 
  * Copyright 2019  <>
  * 
@@ -26,47 +26,75 @@
 
 using namespace std;
 
-void koduj(char tabzn[], int rozmiar) {
-
-    int i = 0;
-    for(i = 0; i < rozmiar; i++) {
-        cout << (int)tabzn[i] << " ";
-}
-}
-
-void dekoduj(char szyfr, int rozmiar) {
-
-    int a = 0;
-    int i = 0;
-    for(i = 0; i < rozmiar; i++) {
-        cout << "Podaj liczbe" << endl;
-        cin >> a;
-        
-}    
-}
-
-int main(int argc, char **argv) {
-    
-    int rozmiar = 19;
-    
-    char napis[rozmiar] = "janooshvietchowreck";
-    
-    koduj(napis, rozmiar);
-    
-    int szyfr[19] = {106 97 110 111 111 115 104 118 105 101 116 99 104 111 119 114 101 99 107 };
-    //dokoduj(szyfr, rozmiar);
+void koduj(char tabzn[],int rozmiar) {
 	
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+	cout << "Podaj tekst do zakodowania(max "<<rozmiar<< "): ";
+	cin >> tabzn;
+	for (int i = 0; i< rozmiar; i++) {
+		
+		cout << (int)tabzn[i]<<" ";
+}
+}
+
+void litery2liczby (char tabzn[], int rozmiar) {
+	
+	for(int i =  0; i < rozmiar; i++) {
+	cout<< (int)tabzn[i] << endl; 
+	
+}
+}
+
+void dekoduj(int kod[], int rozmiar) {
+	
+	cout << "Podaj kod do odkodowania(max"<<rozmiar<<" znakow, oddzielone enterami): "<< endl;
+	for(int i = 0; i < rozmiar; i++) {
+	cin >> kod[i];
+	
+}
+
+	cout<< "twoj kod to: " << endl; 
+	for (int i= 0; i < rozmiar; i++) {
+		cout<< (char)kod[i];
+		
+}
+}
+
+
+
+
+ 
+int main(int argc, char **argv)	{
+	
+	int rozmiar = 10;
+	char napis[rozmiar];
+	int kod[rozmiar];
+	koduj(napis, rozmiar);
+	cout << endl;
+	dekoduj(kod, rozmiar);
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	return 0;
 }
 
