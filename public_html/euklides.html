@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+   euklides.html
+   
+   Copyright 2019  <>
+   
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 2 of the License, or
+   (at your option) any later version.
+   
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+   
+   You should have received a copy of the GNU General Public License
+   along with this program; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+   MA 02110-1301, USA.
+   
+   
+-->
+
+<head>
+<meta charset="utf-8" />
+<title>Algorytm Euklidesza</title>
+<meta name="generator" content="Geany 1.32" />
+</head>
+
+<body>
+    
+<h1>Algorytm Euklidesza</h1>    
+
+<div>
+    <label>a:</label>
+    <input type="text" id="a">
+    <br>
+    <label>b:</label>
+    <input type="text" id="b">
+    <br><br>
+    <button id ="oblicz" onclick="nwd1()">Oblicz NWD1</button>
+    <button id ="oblicz" onclick="nwd1()">Oblicz NWD2</button>
+    <hr>
+    <p class="wynik"></p>
+    <p class="wynik"></p>
+</div>
+
+<script type="text/javascript">
+    function nwd1() {
+        a = document.getElementById("a").value;
+        b = document.getElementById("b").value;
+        a = parseInt(a);
+        b = parseInt(b);
+        while (a != b) {
+            if (a > b)
+                a = a - b;
+            else
+                b = b - a;
+            }
+            w = document.getElementsByClassName("wynik");
+            w[0].innerHTML = "Nwd(" + a1 + ", " + b1 + " ) = " + a;
+            document.getElementById("a").value = '';
+            document.getElementById("b").value = '';
+    }
+</script>
+Nwd(a, b) = 
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
