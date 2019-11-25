@@ -62,6 +62,44 @@ przekazywanie argumentów przez wartość(by value)
 przekazywanie argumentów przez referemcje(by reference)
 
 
+    25/11 poniedziałek 2019
+    
+Schemat Hornera
+
+y = a0 * x ^ 2 + a1 * x + a2
+
+Mnożeń: 3
+Sum: 2
+
+y = (a0 * x + a1) * x + a2
+
+Mnożeń: 2
+Sum: 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
