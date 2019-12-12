@@ -39,7 +39,7 @@ int main(int argc, char **argv) {
     cout << fibonacci_it(0) << endl;
     cout << fibonacci_it(1) << endl;
     
-    for (int i=2; i < 20; i++) {
+    for (int i=2; i < 999999999; i++) {
 
         cout << i << ": fib(" << fibonacci_it (i-2)
              << ", " << fibonacci_it (i-1) << ") = "

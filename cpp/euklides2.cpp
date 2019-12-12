@@ -35,7 +35,7 @@ int main(int argc, char **argv) {
     cin >> b;
     
     while(a > 0) {
-    
+        
     a = a % b;
     b = b - a;   
     
