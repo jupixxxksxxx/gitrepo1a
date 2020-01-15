@@ -76,6 +76,74 @@ y = (a0 * x + a1) * x + a2
 Mnożeń: 2
 Sum: 2
 
+    15/01 środa 2020
+kompilowanie (C++, kompilator, linker)
+interpretowanie(PHP, Python, Java Script)
+
+wyprowadzanie dancyh tekstowych:
+pint(), echo(), echo
+
+Server wykonuje kod php z rozszerzeniem:
+.php
+
+Dane, które zmieniają bazę danych przesyłamy z formularza za pomocą:
+POST
+
+W skrypcie php dane z formularza logowania dostępne są w:
+tablicy $_POST
+
+JeSli chcemy wyszukać w serwisie WWW jakieś infirmacje przesyłąmy w żądaniu dane
+GET
+
+Walidacja danych z formularzy polega na:
+używaniu odpowiedznich atrybutów HTML5
+Sprawdzaniu po stronie servera, czy dane spełniają określone kryteria
+
+Java Scriptu można używać
+po stronie srevera i klienta
+
+Sprawdzanie poprawności loginu i hasła to przykład:
+walidacji, autentykacja
+
+Do sprawdzenia czy zmienna istnieje i nie ma wartości NULL użyję:
+isset()
+
+Funkcja array_Key_exists sprawdza
+czy w tabeli istnieje podany klucz
+
+Dos prawdzenia czy zmienna nie istnieje/wart 0
+empty()
+
+Funkcje php, których mozna użyć w sprawdzaniu poprawności przesyłanych danych:
+strlen(), trim(), htmlspecialchars()
+
+zmienne w PHP:
+nie wymagają deklaracji, są tworzone w momencie pierwszego przypisania
+
+Do tworzenia nowych zmiennych podczas wykonywania skryptu użyjemy:
+&($zmienna) = 'wartosc'
+
+Aby wartość zmiennej znalazła się w ciągu znakowym, użyjemy zapisu:
+"zmienna:($tab(zmienna))"
+"zmienna:$zmienna"
+
+Jeżeli w formularzu HTML typu...
+$_POST['kod']
+
+Nazwa instrukcji PHP, która umoźliwia przeglądanie elementów
+foreach
+
+Dostęp do pierwszego elementu:
+
+
+
+
+
+
+
+
+
+
 
 
 
