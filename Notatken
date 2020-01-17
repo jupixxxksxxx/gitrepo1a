@@ -133,15 +133,92 @@ $_POST['kod']
 Nazwa instrukcji PHP, która umoźliwia przeglądanie elementów
 foreach
 
-Dostęp do pierwszego elementu:
+    16/01/2020 czwartek
+    
+    Coś ciekawego - System binarny
+    
+123(10) = 1*10^2 + 2*10^1 + 3*10^0 = 123
 
+szesnastkowy:
+0-9, A, B, C, D, E, F
 
+dziesiątkowy:
+True, False
+napięcie, brak
+0, 1 - bit
+bajt 
 
+10101(2) = 1*2^4 + 0*2^3 + 1*2^2 + 0*2^1 + 1*2^0
+= 1*2^4 + 1*2^2 + 1 = 21(10)
 
+11011(2) =  16 + 8 + 0 + 2 + 1 = 27
 
+237 / 2 r.1
+118 / 2 r.0
+59 / 2 r.1
+29 / 2 r.1
+14 / 2 r.0
+7 / 2 r.1
+3 / 2 r.1
+1 /2 r.1
 
+11101101
 
+    17/01/2020
+Początki dżawa skripta
 
+//////////////////////////
+
+<script>
+// Edit your script here
+
+var a = 5;
+var b = 10;
+var c = a + b;
+console.log(c);
+document.write("<h1>"+c+"</h1>");
+window.alert(c);
+document.write('<p id="js"></p>');
+document.getElementById("js").innerHTML = c;
+
+</script>
+<!-- edit your html here -->
+
+/////////////////////////
+
+<script>
+// Edit your script here
+
+var a = parseInt(prompt('Podaj bok: '));
+var b = parseInt(prompt('Podaj bok: '));
+var c = parseInt(prompt('Podaj bok: '));
+document.write(a + b + c);
+if (a+b>c && a+c>b && b+c>a) {
+	window.alert('Proste, że się da');
+} else {
+	window.alert('Nope, zwaliłes');
+}
+
+</script>
+<!-- edit your html here -->
+
+////////////////////////
+
+<script>
+// Edit your script here
+
+var dlugosc = 10; // liczba
+var imie = "Mariusch"; //string
+var osoba = {
+	imie:"Mariusch",
+    nazwisko:"Pudzianovsky",
+    wiek: 25
+    };
+
+</script>
+<!-- edit your html here -->
+
+////////////////////////
 
 
 
