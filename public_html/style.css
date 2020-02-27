@@ -1,0 +1,15 @@
+.img200 {
+  width:200px;
+}
+.tloBlue {
+  background-color: #010101
+}
+.tytul, .tresc {
+  text-align: center;
+  background-color: lightblue;
+  padding: 2em;
+  border: 2px solid: grey;
+}
+.tresc {
+  padding: 10em;
+}
