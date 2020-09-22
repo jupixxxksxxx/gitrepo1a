@@ -9,9 +9,9 @@ materialy/web/cwiczenia
 
 C++ wymaga deklaracji typu zmiennej
 int - liczby calkowite
-float - liczby ułamkowe   
+float - liczby ułamkowe
 każda instrukcja kończu się średnikiem
-kompilacja - F8, Zbuduj / Complete      
+kompilacja - F8, Zbuduj / Complete
 error: no match for operator
 warning: unused variable
 pliki obiektowe rozszerzenie ".o"
@@ -47,7 +47,7 @@ php -S localhost:8000
 
 
     7/10 poniedziałek 2019
-    
+
 void nazwafunkcji(parametry) {
     zmienne lokalne
     przesłanie zmienncyh globalnych
@@ -63,7 +63,7 @@ przekazywanie argumentów przez referemcje(by reference)
 
 
     25/11 poniedziałek 2019
-    
+
 Schemat Hornera
 
 y = a0 * x ^ 2 + a1 * x + a2
@@ -134,9 +134,9 @@ Nazwa instrukcji PHP, która umoźliwia przeglądanie elementów
 foreach
 
     16/01/2020 czwartek
-    
+
     Coś ciekawego - System binarny
-    
+
 123(10) = 1*10^2 + 2*10^1 + 3*10^0 = 123
 
 szesnastkowy:
@@ -146,7 +146,7 @@ dziesiątkowy:
 True, False
 napięcie, brak
 0, 1 - bit
-bajt 
+bajt
 
 10101(2) = 1*2^4 + 0*2^3 + 1*2^2 + 0*2^1 + 1*2^0
 = 1*2^4 + 1*2^2 + 1 = 21(10)
@@ -226,7 +226,7 @@ Kompresja danych
 kompresja bezstratna: 7zip, zip, xz, rar
 
 UTF-8 = 2 bajty
-1 bt * 8 = 1 B(ajt) 
+1 bt * 8 = 1 B(ajt)
 
 1024B = 1kB
 
@@ -243,54 +243,9 @@ R'c = (1 - Vk/Vnk) * 100% - ile miejsca zaoszczędzono
 w pythonie program do zliczania współczynnika kompresji
 Wyświetla oba współczynniki Rc
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    22/09/2020 wtorek
+        Kwerendy
+LIKE 'S*' -> Sandomiege, Staschoof
+* - dowolne znaki dowolną ilość razy
+LIKE 'S!' -> Sb Sc Sh
+! - jeden znak
